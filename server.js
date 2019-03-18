@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 //mongodb+srv://rajat:<password>@cluster0-dvak9.mongodb.net/test?retryWrites=true
-mongoose.connect('mongodb://rajat:Qwerty123@ds163825.mlab.com:63825/mlab1',(err)=>{ //mongodb::/localhost/database_name
+mongoose.connect('mongodb+srv://rajat1:BfJkzTIdSLKNKqY0@cluster0-dvak9.mongodb.net/test?retryWrites=true',{useNewUrlParser:true},(err)=>{ //mongodb::/localhost/database_name
     if(err){
         console.log("Error in database connection", err)
     }else{

@@ -14,4 +14,10 @@ router.post('/create',tokenVerify, createTodo)
 const fetchTodo = require('./fetchTodo')
 router.get('/fetchData', tokenVerify, fetchTodo)
 
+const updateTodo = require('./updateTodo')
+router.post('/updateTodo', tokenVerify, updateTodo)
+
+const deleteTodo = require('./deleteTodo')
+router.post('/deleteTodo', tokenVerify, deleteTodo)
+
 module.exports = router;
